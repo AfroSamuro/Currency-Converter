@@ -12,25 +12,73 @@
 <body>
     <section class="page">
         <header class="page__header">
+            <div class="header__total">
 
+                <img src="./images/Logo.svg" alt="logo" class="header__logo">
+
+                <div class="header__menu">
+                    <button class="menu__bank">Банк</button>
+                    <button class="menu__business">Бизнес</button>
+                    <button class="menu__investing">Инвестиции</button>
+                    <button class="menu__insurance">Страхование</button>
+                    <button class="menu__mobile">Мобайл</button>
+                    <button class="menu__travel">Путешествия</button>
+                    <button class="menu__entertainments">Развлечения</button>
+                </div>
+
+                <button class="header__enter">Войти</button>
+
+            </div>
         </header>
         <main class="page__convertor">
+
             <h1 class="convertor__title">
-                
+                Конвертер валют онлайн
             </h1>
+
             <section class="convertor__transaction">
+
                 <section class="transaction__left">
                     <p class="left__got">У меня есть</p>
-                    
+                    <div class="left__currency">
+                        <button value="RUB" class="currency">RUB</button>
+                        <button value="USD" class="currency">USD</button>
+                        <button value="EUR" class="currency">EUR</button>
+                        <button value="GBP" class="currency">GBP</button>
+                        <select class="currency">
+                            <option value="EUR">EUR</option>
+                        </select>
+                    </div>
+                    <div class="left__field">
+                        <input type="number" class="left__field__input" placeholder="1">
+                        <p class="left__field__course">abuba</p>
+                    </div>
                 </section>
-                <button class="transaction__changeButton"></button>
-                <section class="transaction__right">
 
+                <button class="transaction__changeButton"></button>
+
+                <section class="transaction__right">
+                    <p class="right__get">Хочу приобрести</p>
+                    <div class="right__currency">
+                        <button value="RUB" class="currency">RUB</button>
+                        <button value="USD" class="currency">USD</button>
+                        <button value="EUR" class="currency">EUR</button>
+                        <button value="GBP" class="currency">GBP</button>
+                        <select class="currency">
+                            <option value="EUR">EUR</option>
+                        </select>
+                    </div>
+                    <div class="right__field">
+                        <input type="number" class="right__field__input" placeholder="??">
+                        <p class="right__field__course">bibaba</p>
+                    </div>
                 </section>
+
             </section>
+
         </main>
     </section>
-    
+
     <script src="./scripts/index.js"></script>
 </body>
 
