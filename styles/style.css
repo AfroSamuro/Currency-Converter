@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+button {
+    cursor: pointer;
+}
+
 .page {
     font-family: 'Roboto', sans-serif;
 }
@@ -103,11 +107,18 @@
 
 .currency {
     background-color: transparent;
-    border: gray solid 1px;
+    border: 1px solid gray;
     width: 52px;
     height: 28px;
     color: #959BA4;
     font-size: 12px;
+    cursor: pointer;
+}
+
+.active {
+    border: 1px solid #833AE0;
+    color: white;
+    background-color: #833AE0;
 }
 
 .currency__rub {
@@ -186,8 +197,9 @@
 
 }
 
-.currency:hover {
-background-color: #dabdff;
+.currency:hover:not(.active) {
+    background-color: #c79ffc;
+    color: white;
 }
 
 .convertor__transaction button {
