@@ -74,7 +74,7 @@ button {
 }
 
 .convertor__title {
-    padding-top: 56px ;
+    padding-top: 56px;
     font-size: 36px;
 }
 
@@ -204,4 +204,48 @@ button {
 
 .convertor__transaction button {
     border-right: none;
+}
+
+.loading {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(16, 16, 16, 0.7);
+}
+
+.loadingDiv {
+    margin: 200px auto;
+    width: 136px;
+    height: 36;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 30px;
+}
+
+.error {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.errorDiv {
+    margin: 200px auto;
+    width: 156px;
+    height: 74px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #f7d3d3;
+    font-size: 30px;
+}
+
+.hidden {
+    display: none;
 }
